@@ -1,11 +1,7 @@
-import { Container, Text } from './styles'
+import { Container } from './styles'
 
-const Footer = () => {
-  return (
-    <Container>
-      <Text>Copyright 2020 Luby Software</Text>
-    </Container>
-  )
-}
-
-export default Footer
+export const Footer = () => (
+  <Container>
+    <p>Copyright 2020 Luby Software</p>
+  </Container>
+)

@@ -1,13 +1,22 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Container = styled.div`
-  border-top: 2px solid #ebebeb;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-`
+export const Container = styled.section`
+  height: 3.9375rem; 
+  width: 100%;
 
-export const Text = styled.label`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
   text-align: center;
-`
+  font-size: 0.9375rem;
+  background: var(--background);
+  color: var(--gray-700);
+  border-top: 1px solid var(--shape);
+  padding-top: 1.825rem; 
+  
+  @media (max-width: 1200px) {
+    margin-top: 2rem;
+    position: relative;
+  }
+`;
