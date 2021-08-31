@@ -94,6 +94,8 @@ export const AppGameMod = () => {
         const indexSelected = selectedNumbers.indexOf(newValue)
         const numExists = indexSelected === -1
 
+        console.log(selectedNumbers.length < gameChoice['max-number'])
+
         if (numExists && selectedNumbers.length < gameChoice['max-number']) {
           return setSelectedNumbers(prevState => [...prevState, newValue])
         } else if (!numExists) {
